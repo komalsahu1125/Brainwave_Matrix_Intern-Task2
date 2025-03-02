@@ -2,66 +2,70 @@
 # Walmart-Sales-Data-Analysis
 ![sentiment-analysis](https://github.com/user-attachments/assets/fe8c690b-584e-43d2-b52d-d2ca2f586268)
 
-
-## About
-Walmart is a globally recognized retail giant, renowned for offering a wide range of products at competitive prices, and providing a convenient shopping experience for millions of customers worldwide.
-
-Analyzing this dataset offers valuable insights into Walmart's customer base and purchasing behavior. It reveals details about customer demographics, product preferences, and spending patterns. This comprehensive dataset is a valuable resource for understanding various aspects of Walmart's operations, such as marketing strategies, customer segmentation, and product demand. It can enhance strategic decision-making in areas like inventory management, targeted marketing, and customer relationship management.
-
-## Purposes of the Project
-The main goal of this project is to gain understanding from Walmart's sales data, exploring the various factors that influence sales across different branches.
+## Project Overview
+The Social Media Sentiment Analysis project analyzes user-generated content across various social media platforms to identify sentiments and trends. The dataset includes posts from platforms like Twitter, Instagram, and Facebook, capturing emotions, hashtags, engagement metrics (likes, retweets), and timestamps. This dataset can be utilized for sentiment classification, trend analysis, and user engagement studies.
 
 ## Dataset Description
-The dataset contains transactional data from Walmart, including details about customers and their purchases. The columns in the dataset are as follows:
+The dataset consists of multiple attributes that help in understanding social media sentiment trends.
 
-* User_ID: Unique identifier for each user
-* Product_ID: Unique identifier for each product
-* Gender: Gender of the user (Male/Female)
-* Age: Age group of the user
-* Occupation: Masked occupation code
-* City_Category: Category of the city (A, B, C)
-* Stay_In_Current_City_Years: Number of years the user has stayed in the current city
-* Marital_Status: Marital status of the user (0 = Single, 1 = Married)
-* Product_Category: Masked product category
-* Purchase: Purchase amount
+Column	Description
 
-## Project Structure :
+Text  -	Content of the post
 
-1. Importing Libraries: Essential libraries for data analysis and visualization are imported.
-  
-2. Loading the Dataset: The sales data is loaded into a pandas DataFrame.
-  
-3. Data Preprocessing:
-* Checked for duplicate and missing values.
-* Data cleaning and transformation as required.
-  
-4. Exploratory Data Analysis (EDA):
-* Analyzing customer distribution across cities.
-* Examining marital status distribution.
-* Identifying top-selling products and categories.
-* Analyzing purchase patterns based on demographics.
+Sentiment  -	Sentiment classification (positive, negative, neutral)
 
+Timestamp  -	Date and time of the post
 
-## Requirements :
+User  - 	Username of the poster
 
-* Python 3.x
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* jupyter
-  
+Platform  -	Social media platform (Twitter, Instagram, Facebook)
+
+Hashtags  - 	Hashtags used in the post
+
+Retweets  - 	Number of times the post was retweeted
+
+Likes  - 	Number of likes received
+
+Country  -	Country of origin of the post
+
+Year  - 	Year the post was made
+
+Month  - 	Month the post was made
+
+Day  - 	Day of the post
+
+Hour  - 	Hour of the post
+
+## Key Concepts and Techniques
+- **Natural Language Processing (NLP)**: Tokenization, stopword removal, stemming, and lemmatization to preprocess text data.
+- **Text Preprocessing**: Handling raw tweet data (hashtags, mentions, URLs) and transforming it into a format suitable for modeling.
+- **Feature Engineering**: Using TF-IDF and word embeddings for feature extraction.
+- **Machine Learning Models**: Implementing classification models like Logistic Regression, Naive Bayes, and SVM for sentiment analysis.
+- **Model Evaluation**: Accuracy, precision, recall, and F1-score for performance evaluation.
+
+**Future Work:**
+In future improvements, additional techniques such as ensemble learning, feature engineering, or deep learning approaches could be explored to further enhance model performance.
+
 ## Conclusion :
 
-This analysis provides valuable insights into Walmart's customer demographics and purchasing patterns, aiding in better strategic decisions in marketing and inventory management.
-1. **Occupational Spending Patterns:** Occupations classified under codes 8, 12, 15, and 17 exhibit notably higher average spending, suggesting targeted marketing strategies could be effective for these groups.
+**Sentiment Distribution**
+* The dataset consists of tweets categorized into different sentiment classes: Positive, Negative, Neutral, Indifference, Freedom, Friendship, etc.
+* The majority of tweets fall under Neutral and Positive categories, while Negative sentiment is less frequent.
+* Some custom sentiment labels like Indifference and Freedom suggest a non-traditional approach to sentiment classification.
+Engagement & Sentiment Impact
 
-2. **Top Performing Product:** The product with **Product_ID P00265242** recorded the highest purchase frequency, indicating its strong market demand and potential for promotional focus.
+Positive tweets tend to receive more likes and retweets compared to negative ones.
+Negative tweets show higher engagement when they discuss trending or controversial topics.
+Tweets with hashtags and mentions tend to have better reach and engagement.
+Time-Based Sentiment Trends
 
-3. **Correlation Insights:** While no strong correlations were detected among most variables, there are minor associations between product categories and purchasing behaviors, warranting further investigation.
+Evening and late-night tweets have higher engagement (more retweets & likes).
+Sentiment distribution varies by day and month—weekends show a more positive tone, while mid-week tweets are more neutral or negative.
+Certain months (potentially event-driven) see spikes in positive or negative sentiments.
+Common Keywords & Word Cloud Insights
 
-4. **Gender-Based Spending Variability:** Male consumers display greater variability in spending, particularly within the middle-age demographic, highlighting an opportunity for tailored marketing interventions.
-
-5. **Product Category Performance:** **Product Category 1** emerged as the top-performing segment in terms of total purchases, underscoring its popularity and potential for driving future sales growth.
+Positive tweets frequently contain words like "happy," "great," "love," and "enjoy."
+Negative tweets contain words like "bad," "disappointed," "hate," and "angry."
+Neutral tweets mostly consist of factual statements with minimal emotional words.s the top-performing segment in terms of total purchases, underscoring its popularity and potential for driving future sales growth.
 
 ---
