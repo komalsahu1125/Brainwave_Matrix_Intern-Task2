@@ -1,7 +1,6 @@
 # Brainwave_Matrix_Intern-Task2
 # Walmart-Sales-Data-Analysis
-![Sample Image](![sentiment-analysis](https://github.com/user-attachments/assets/fe8c690b-584e-43d2-b52d-d2ca2f586268)
-)
+![sentiment-analysis](https://github.com/user-attachments/assets/fe8c690b-584e-43d2-b52d-d2ca2f586268)
 
 
 ## About
